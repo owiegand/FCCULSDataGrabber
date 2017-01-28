@@ -1,0 +1,14 @@
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\FCCULSDataGrabber.exe.config
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\FCCULSDataGrabber.exe
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\FCCULSDataGrabber.pdb
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\obj\Debug\FCCULSDataGrabber.csprojResolveAssemblyReference.cache
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\obj\Debug\FCCULSDataGrabber.Form1.resources
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\obj\Debug\FCCULSDataGrabber.Properties.Resources.resources
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\obj\Debug\FCCULSDataGrabber.csproj.GenerateResource.Cache
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\obj\Debug\FCCULSDataGrabber.exe
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\obj\Debug\FCCULSDataGrabber.pdb
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Oliver\Documents\Visual Studio 2015\Projects\FCCULSDataGrabber\FCCULSDataGrabber\bin\Debug\HtmlAgilityPack.xml
