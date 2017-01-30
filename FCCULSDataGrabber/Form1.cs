@@ -161,27 +161,29 @@ namespace FCCULSDataGrabber
                 CustomComboboxItem SelectCallSignMatchItem = (CustomComboboxItem)CallSignOptions.SelectedItem;
                 if (!DataFound && SelectCallSignMatchItem.Value != -1 && !DataStringLists[SelectCallSignMatchItem.Value][x].Equals(""))
                 {
+                   
                     CurrentlySearchingFor.Text = "Searching: " + DataStringLists[SelectCallSignMatchItem.Value][x].ToString();
-                    //string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=" + DataStringLists[SelectCallSignMatchItem.Value][x] + "&format=json&pageSize=1000";
-                    string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=N8AM&format=json";
+                    CurrentlySearchingFor.Refresh();
+                    string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=" + DataStringLists[SelectCallSignMatchItem.Value][x] + "&format=json&pageSize=1000";
+                    //string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=N8AM&format=json";
                     Console.Write("Testing");
                     string text = GetDataReponseFromFCCAPI(url);
                     dynamic stuff = JsonConvert.DeserializeObject(text);
                     //MessageBox.Show(DataStringLists[2][x]);
-                    Console.WriteLine(DataStringLists[2][x]);
+                  
 
 
                     //Check To See If We Recieved An Error Meaning No Matches Found
                     if (!stuff.status.Value.Equals("OK"))
                     {
                         //TODO: Handle Error Here
-                        Console.Write("Error");
+                       
                     } else
                     {
                         //We Found Data. We Could Have Mulitple Results Returned Here
                         DataFound = true;
                         int NumOfResultReturned = stuff.Licenses.totalRows;
-                        Console.Write(NumOfResultReturned);
+                       
                         if (NumOfResultReturned > 1)
                         {
                             //We Have Multiple Results
