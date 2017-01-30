@@ -162,8 +162,9 @@ namespace FCCULSDataGrabber
                 if (!DataFound && SelectCallSignMatchItem.Value != -1 && !DataStringLists[SelectCallSignMatchItem.Value][x].Equals(""))
                 {
                     CurrentlySearchingFor.Text = "Searching: " + DataStringLists[SelectCallSignMatchItem.Value][x].ToString();
-                    string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=" + DataStringLists[SelectCallSignMatchItem.Value][x] + "&format=json&pageSize=1000";
-                    //string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=KE8FHQ&format=json";
+                    //string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=" + DataStringLists[SelectCallSignMatchItem.Value][x] + "&format=json&pageSize=1000";
+                    string url = "http://data.fcc.gov/api/license-view/basicSearch/getLicenses?searchValue=N8AM&format=json";
+                    Console.Write("Testing");
                     string text = GetDataReponseFromFCCAPI(url);
                     dynamic stuff = JsonConvert.DeserializeObject(text);
                     //MessageBox.Show(DataStringLists[2][x]);
@@ -174,12 +175,13 @@ namespace FCCULSDataGrabber
                     if (!stuff.status.Value.Equals("OK"))
                     {
                         //TODO: Handle Error Here
+                        Console.Write("Error");
                     } else
                     {
                         //We Found Data. We Could Have Mulitple Results Returned Here
                         DataFound = true;
                         int NumOfResultReturned = stuff.Licenses.totalRows;
-
+                        Console.Write(NumOfResultReturned);
                         if (NumOfResultReturned > 1)
                         {
                             //We Have Multiple Results
@@ -448,6 +450,7 @@ namespace FCCULSDataGrabber
         }
         private List<dynamic> SearchInMultipleItems(dynamic JSONResponse, string SearchValue, string SearchType)
         {
+            
             dynamic LicenseData = JSONResponse.Licenses.License;
             int Count = JSONResponse.Licenses.totalRows;
             List<dynamic> FoundResults = new List<dynamic>();
@@ -459,20 +462,18 @@ namespace FCCULSDataGrabber
 
                 if (SearchType.Equals("CallSign"))
                 {
-                    //We Are Searching Via a Callsign
-                      
-                    if (LicenseData[u].callsign.Value.ToString().Equals(SearchValue))
+                       
+                    if (LicenseData[u].callsign.Value.ToString().Trim().Equals(SearchValue.Trim()))
                     {
                         //Value Found Add To The List
                         FoundResults.Add(LicenseData[u]);
-                           
                     }
                        
                 }
                 else if (SearchType.Equals("FRN"))
                 {
                     //We Are Searching Via a FRN
-                    if (LicenseData[u].frn.Value.ToString().Equals(SearchValue))
+                    if (LicenseData[u].frn.Value.ToString().Trim().Equals(SearchValue.Trim()))
                     {
                         //Value Found Add To The List
                         FoundResults.Add(LicenseData[u]);
@@ -482,7 +483,7 @@ namespace FCCULSDataGrabber
                 else if (SearchType.Equals("Name"))
                 {
                     //We Are Searching Via a Name
-                    if (LicenseData[u].licName.Value.ToString().Equals(SearchValue))
+                    if (LicenseData[u].licName.Value.ToString().Trim().Equals(SearchValue.Trim()))
                     {
                         //Value Found Add To The List
                         FoundResults.Add(LicenseData[u]);
