@@ -10,3 +10,12 @@ FCCULSDataGrabber is a scrapper program that allows the user to attach a CSV fil
 5. Map either callsign or FRN to the correct columns in your CSV file
 6. Select options you want outputted to the CSV file
 7. Generate your CSV File!
+
+
+<!--
+[**ALTSHORTDESC**] This is the ALT Short DESC.
+[**LONGDESC**] This is the ling desc.
+[**IMGURL**] https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png
+[**THUMBNAILIMGURL**]https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x961dp.png
+[**CATEGORY**] Testing1
+-->
