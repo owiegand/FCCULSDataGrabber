@@ -13,9 +13,12 @@ FCCULSDataGrabber is a scrapper program that allows the user to attach a CSV fil
 
 
 <!--
-[**ALTSHORTDESC**] This is the ALT Short DESC.
-[**LONGDESC**] This is the ling desc.
-[**IMGURL**] https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x96dp.png
-[**THUMBNAILIMGURL**]https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_284x961dp.png
-[**CATEGORY**] Testing1
+[**GITHUBPHPPARSER**]
+{
+  "AltShortDesc": "This is the Short DESC",
+  "LongDesc": "This is the Ling DSEC",
+  "ImgURL": "http://www.google.com",
+  "ThumbailImgURL": "http://www.google.org",
+  "Category": "Test Category\n"
+}
 -->
