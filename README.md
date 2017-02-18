@@ -15,7 +15,8 @@ FCCULSDataGrabber is a scrapper program that allows the user to attach a CSV fil
 <!--
 [**GITHUBPARSER**]
 {
-  "Icon": "fa-address-card-o"
+  "Icon": "fa-address-card-o",
+  "AltShortDesc": "FCCULSDataGrabber is a scrapper program that allows the user to attach a CSV file of either callsign's or FRN's. The program returns a CSV file containing selectable options from ULS."
 }
 [**GITHUBPARSER**]
 -->
